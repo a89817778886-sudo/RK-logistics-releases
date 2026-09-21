@@ -1,4 +1,4 @@
 {
   "source_commit": "34e87404197426a784693de35f143e160987ca4c",
-  "reason": "retry after serde dependency fix"
+  "reason": "retry with generated platform icons"
 }
