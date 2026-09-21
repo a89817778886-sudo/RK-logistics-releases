@@ -7,7 +7,6 @@ on:
   push:
     paths:
       - "release-trigger.json"
-      - ".github/workflows/build-desktop.yml"
 
 permissions:
   contents: write
@@ -33,7 +32,7 @@ jobs:
         with:
           repository: a89817778886-sudo/RK-logistics
           ref: main
-          ssh-key: ${{ secrets.RK_SOURCE_SSH_KEY }}
+          token: ${{ secrets.RK_SOURCE_TOKEN }}
           path: source-meta
           fetch-depth: 1
 
@@ -80,7 +79,7 @@ jobs:
         with:
           repository: a89817778886-sudo/RK-logistics
           ref: ${{ needs.prepare.outputs.source_sha }}
-          ssh-key: ${{ secrets.RK_SOURCE_SSH_KEY }}
+          token: ${{ secrets.RK_SOURCE_TOKEN }}
           fetch-depth: 1
 
       - name: Validate signing secrets
