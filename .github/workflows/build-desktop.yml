@@ -109,6 +109,9 @@ jobs:
       - name: Install frontend tooling
         run: npm install
 
+      - name: Generate desktop icons
+        run: npx tauri icon src-tauri/icons/icon.png
+
       - name: Prepare immutable version
         shell: bash
         env:
