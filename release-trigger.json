@@ -1,4 +1,4 @@
 {
-  "source_commit": "34e87404197426a784693de35f143e160987ca4c",
-  "reason": "retry with generated platform icons"
+  "source_commit": "74b47824f65c078ea3acf4f22249d7024e022c3a",
+  "reason": "retry after valid PNG icon"
 }
