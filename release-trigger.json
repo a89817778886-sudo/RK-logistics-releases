@@ -1,4 +1,4 @@
 {
-  "source_commit": "6861333f414b41804bbd659a3e92d4dfa58e58cd",
-  "reason": "retry after adding desktop icon"
+  "source_commit": "34e87404197426a784693de35f143e160987ca4c",
+  "reason": "retry after serde dependency fix"
 }
